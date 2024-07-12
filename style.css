@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.header-image {
+    position: relative;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+.header-image .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+}
+
+.header-image:hover .overlay {
+    display: block;
+}
+
+.header-image .overlay h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.profile {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-photo {
+    width: 140px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.job-description {
+    font-size: 1.2em;
+    color: #3498db;
+    margin: 10px 0;
+}
+
+.overview {
+    font-size: 1.6em;
+    color: #3498db;
+    margin: 10px 0;
+}
+
+.line {
+    font-size: 3em;
+    color: #3498db;
+    margin: 0px 0;
+    margin-bottom: 70px;
+}
+
+.projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.project-photo {
+    width: 250px;
+    height: 330px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.project-photo-special {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.project-description {
+    text-align: left;
+}
+
+.project-description h3 {
+    margin: 0;
+    color: #3498db;
+}
+
+.project-description p {
+    margin: 5px 0;
+}
+
+.project-description a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-description a:hover {
+    color: #1d6fa5;
+}
+
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery h2 {
+    font-size: 1.6em;
+    color: #3498db;
+    margin: 10px 0;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container img {
+        max-width: 300px;
+    }
+}
